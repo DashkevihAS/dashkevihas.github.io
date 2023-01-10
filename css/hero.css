@@ -1,0 +1,31 @@
+.hero {
+  margin-top: 100px;
+}
+.hero__container {
+  padding-top: 50px;
+  min-height: 400px;
+  background-image: url('../images/backAwesome.svg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  color: var(--text-white);
+}
+
+.hero__title {
+  margin-bottom: 40px;
+}
+.hero__subtitle {
+  max-width: 300px;
+  margin-bottom: 140px;
+}
+
+.hero__title span {
+  color: var(--hover-color);
+  font-size: 36px;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    margin-top: 80px;
+  }
+}
