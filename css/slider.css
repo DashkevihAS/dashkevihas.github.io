@@ -22,7 +22,7 @@
 .slider__indicators {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -60px;
   left: 0;
   z-index: 15;
   display: flex;
@@ -38,8 +38,8 @@
   flex: 0 1 auto;
   width: 30px;
   height: 6px;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin-right: 5px;
+  margin-left: 5px;
   cursor: pointer;
   background-color: var(--text-color);
   background-clip: padding-box;
@@ -84,10 +84,12 @@
     left: -30px;
   }
   .slider__indicators {
-    bottom: -10px;
+    bottom: -40px;
   }
   .slider__dot {
     width: 20px;
     height: 4px;
+    margin-right: 3px;
+    margin-left: 3px;
   }
 }
