@@ -33,6 +33,11 @@ export const slider = () => {
     dots.push(dot);
   }
 
+  const setActiveDot = () => {
+    dots.forEach((dot) => dot.classList.remove('slider__dot_active'));
+    dots[slideIndex - 1].classList.add('slider__dot_active');
+  };
+
   next.addEventListener('click', () => {
     if (offset == +width.slice(0, width.length - 2) * (slides.length - 1)) {
       offset = 0;
@@ -48,8 +53,7 @@ export const slider = () => {
       slideIndex++;
     }
 
-    dots.forEach((dot) => dot.classList.remove('slider__dot_active'));
-    dots[slideIndex - 1].classList.add('slider__dot_active');
+    setActiveDot();
   });
 
   prev.addEventListener('click', () => {
@@ -67,8 +71,7 @@ export const slider = () => {
       slideIndex--;
     }
 
-    dots.forEach((dot) => dot.classList.remove('slider__dot_active'));
-    dots[slideIndex - 1].classList.add('slider__dot_active');
+    setActiveDot();
   });
 
   dots.forEach((dot) => {
@@ -80,8 +83,7 @@ export const slider = () => {
 
       slidesField.style.transform = `translateX(-${offset}px)`;
 
-      dots.forEach((dot) => dot.classList.remove('slider__dot_active'));
-      dots[slideIndex - 1].classList.add('slider__dot_active');
+      setActiveDot();
     });
   });
 };
