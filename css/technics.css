@@ -1,0 +1,13 @@
+.technics {
+  padding: 50px 0 100px;
+}
+
+.technics__container {
+  padding-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .technics {
+    padding: 40px 0;
+  }
+}

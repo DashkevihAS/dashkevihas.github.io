@@ -1,19 +1,9 @@
-window.addEventListener('DOMContentLoaded', () => {
-  const btnBurger = document.querySelector('.navigation__btn-burger');
-  const menuBurger = document.querySelector('.navigation__list');
-  const menuLinks = document.querySelectorAll('.navigation__item');
+import { slider } from './slider.js';
+import { burgerMenuController } from './burgerMenuController.js';
 
-  const closeMenu = () => {
-    btnBurger.classList.remove('navigation__btn-burger_close');
-    menuBurger.classList.remove('navigation__list_open');
-  };
+const init = () => {
+  burgerMenuController();
+  slider();
+};
 
-  btnBurger.addEventListener('click', function () {
-    this.classList.toggle('navigation__btn-burger_close');
-    menuBurger.classList.toggle('navigation__list_open');
-  });
-
-  menuLinks.forEach((link) => {
-    link.addEventListener('click', closeMenu);
-  });
-});
+init();
