@@ -1,5 +1,5 @@
 .technics {
-  padding: 50px 0 100px;
+  padding-bottom: 100px;
 }
 
 .technics__container {
@@ -8,6 +8,11 @@
 
 @media (max-width: 768px) {
   .technics {
-    padding: 40px 0;
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 520px) {
+  .technics {
+    padding-bottom: 40px;
   }
 }
