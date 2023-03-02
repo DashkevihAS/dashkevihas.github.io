@@ -7,8 +7,9 @@ export const slider = () => {
     prev = document.querySelector('.slider__btn_prev'),
     next = document.querySelector('.slider__btn_next'),
     slidesWrapper = document.querySelector('.slider__wrapper'),
-    width = window.getComputedStyle(slidesWrapper).width,
     slidesField = document.querySelector('.slider__inner');
+
+  const width = window.getComputedStyle(slidesWrapper).width;
 
   slidesField.style.width = 100 * slides.length + '%';
 

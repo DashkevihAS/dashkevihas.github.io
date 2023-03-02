@@ -6,8 +6,8 @@
 
 .stack__container {
   position: relative;
-  min-height: 253px;
-  padding: 55px 83px;
+  min-height: 300px;
+  padding: 60px;
   border-radius: 25px;
   background-color: rgba(40, 48, 54, 0.6);
   overflow: hidden;
@@ -36,7 +36,7 @@
 }
 .stack__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 70px);
+  grid-template-columns: repeat(auto-fit, 72px);
   justify-content: center;
   gap: 60px;
 }

@@ -63,7 +63,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 676px) {
   .navigation__btn-burger {
     display: block;
   }
